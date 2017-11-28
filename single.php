@@ -25,9 +25,7 @@ get_header('full'); ?>
 				<div class="row">
 		<?php
 		while ( have_posts() ) : the_post();
-
-			get_template_part( 'components/post/content', get_post_format() );
-
+			get_template_part( 'components/post/content', get_post_format() );			
 		?>
 		<div class="col-12">
 			<nav class="navigation post-navigation" role="navigation">
@@ -41,6 +39,12 @@ get_header('full'); ?>
 					</div>
 				</div>
 			</nav>
+
+			<?php
+			// If comments are open or we have at least one comment, load up the comment template.
+			 if ( comments_open() || get_comments_number() ) : comments_template();
+				endif;
+			?>	
 		</div>
 		<?php
 		endwhile; // End of the loop.

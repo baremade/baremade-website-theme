@@ -268,3 +268,8 @@ require get_template_directory() . '/inc/shortcodes/content-slider.php';
  * Load content slider shortcode.
  */
 require get_template_directory() . '/inc/shortcodes/animated-number.php';
+
+/**
+ * Load image hero shortcode.
+ */
+require get_template_directory() . '/inc/shortcodes/image-hero.php';

@@ -3933,11 +3933,18 @@ body {
 
 .image-hero {
   position: relative;
-  height: 600px;
-  background-position: center;
-  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 15%;
+}
+
+@media (min-width: 768px) {
+  .image-hero {
+    padding-bottom: 30%;
+  }
 }
 
 

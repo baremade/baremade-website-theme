@@ -4290,6 +4290,9 @@ object {
 ## UTILS
 --------------------------------------------------------------*/
 
+.background-position-rc {
+  background-position: right center;
+}
 .height-100 {
   height: 100%;
 }

@@ -281,7 +281,7 @@ th {
 }
 
 .optin-bg {
-  background-color: #2F3082;
+  background-color: #2f3082;
   padding: 25px 0 !important;
 }
 
@@ -290,7 +290,7 @@ th {
 }
 
 .blue-bg {
-  background-color: #2F3082;
+  background-color: #2f3082;
 }
 
 
@@ -3335,7 +3335,8 @@ textarea {
 button.primary,
 input[type="button"].primary,
 input[type="reset"].primary,
-input[type="submit"].primary {
+input[type="submit"].primary,
+.button-secondary {
   font-family: europa, serif;
   font-style: normal;
   font-weight: 700;
@@ -3414,6 +3415,22 @@ div.wpcf7-mail-sent-ok {
   border: none;
 }
 
+.button-secondary {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #2f3082;
+  padding: 10px 25px;
+}
+
+a.button-secondary,
+a.button-secondary:hover,
+a.button-secondary:focus,
+a.button-secondary:active,
+a.button-secondary:visited {
+  border-bottom: none;
+  color: #ffffff;
+}
+
 
 /*--------------------------------------------------------------
 # Formattings
@@ -3424,6 +3441,25 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
+}
+
+hr.primary {
+  background-color: #2f3082;
+  height: 4px;
+  width: 70px;
+  border-radius: 1px;
+}
+
+hr.secondary {
+  background-color: #ba7b42;
+  height: 4px;
+  width: 70px;
+  border-radius: 1px;
+}
+
+.white-box {
+  background-color: #ffffff;
+  padding: 50px 25px 25px;
 }
 
 
@@ -3899,10 +3935,9 @@ body {
   position: relative;
   height: 600px;
   background-position: center;
-  background-color: #000;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
 
@@ -4226,7 +4261,7 @@ object {
 
 .landing-page .site-footer {
   background-color: #bb7b42;
-  color: #e2c8b2;
+  color: #ffffff;
   padding-top: 0;
 }
 
@@ -4236,11 +4271,11 @@ object {
 }
 
 .landing-page .site-footer a {
-  color: #e2c8b2;
+  color: #ffffff;
 }
 
 .landing-page .site-footer a:hover {
-  border-bottom: 4px solid #e2c8b2;
+  border-bottom: 4px solid #ffffff;
 }
 
 
@@ -4254,6 +4289,10 @@ object {
 
 .text-right {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .padding-bottom-50 {
@@ -4323,6 +4362,10 @@ object {
 
 .white-text {
   color: #ffffff;
+}
+
+.gold-text {
+  color: #ba7b42;
 }
 
 .page .ck_form.ck_naked {

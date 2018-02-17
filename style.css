@@ -407,7 +407,7 @@ h1,
   font-style: normal;
   font-weight: 600;
   font-size: 2.25rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 h2,
@@ -3885,7 +3885,7 @@ body {
   position: relative;
 }
 
-.top-hero-h1{
+.top-hero-h1 {
   font-size: 50px;
   top: 50%;
 }
@@ -3896,8 +3896,6 @@ body {
 
 @media (max-width: 768px) {
   .top-hero-h1 {
-    position: relative;
-    top: 50%;
     font-size: 36px;
   }
 }
@@ -3905,6 +3903,17 @@ body {
 
 .row-margin {
   margin-top: 40px;
+}
+
+.vertical-center-hero {
+  position: relative;
+  top: 40%;
+}
+
+@media (max-width: 768px) {
+  .vertical-center-hero {
+    top: 10%;
+  }
 }
 
 /*--------------------------------------------------------------

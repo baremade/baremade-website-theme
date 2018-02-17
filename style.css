@@ -3887,11 +3887,17 @@ body {
 
 .top-hero-h1 {
   font-size: 50px;
-  top: 50%;
+  top: 40%;
 }
 
 .hero-h1 {
   top: 100%;
+}
+
+@media (max-width: 1200px) {
+  .top-hero-h1 {
+    top: 20%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3900,6 +3906,11 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .top-hero-h1 {
+    top: 10%
+  }
+}
 
 .row-margin {
   margin-top: 40px;

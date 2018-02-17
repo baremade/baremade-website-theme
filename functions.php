@@ -205,7 +205,7 @@ add_action( 'widgets_init', 'base_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function base_theme_scripts() {
-	wp_enqueue_style( 'base_theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'base_theme-style', get_stylesheet_uri(), array(), '20180216' );
 
 	wp_enqueue_script( 'base_theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array('jquery'), '20151215', true );
 

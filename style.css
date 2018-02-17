@@ -3460,6 +3460,7 @@ hr.secondary {
 .white-box {
   background-color: #ffffff;
   padding: 50px 25px 25px;
+  min-height: 250px;
 }
 
 
@@ -3469,7 +3470,8 @@ hr.secondary {
 
 ul,
 ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 0;
+  padding-left: 20px;
 }
 
 ul {
@@ -3874,6 +3876,36 @@ body {
   padding-top: 0;
 }
 
+/*--------------------------------------------------------------
+## Landing Pages
+--------------------------------------------------------------*/
+
+.top-hero-h1,
+ .hero-h1 {
+  position: relative;
+}
+
+.top-hero-h1{
+  font-size: 50px;
+  top: 50%;
+}
+
+.hero-h1 {
+  top: 100%;
+}
+
+@media (max-width: 768px) {
+  .top-hero-h1 {
+    position: relative;
+    top: 50%;
+    font-size: 36px;
+  }
+}
+
+
+.row-margin {
+  margin-top: 40px;
+}
 
 /*--------------------------------------------------------------
 ## FullWidth Shortcode
@@ -3941,12 +3973,11 @@ body {
   padding-bottom: 15%;
 }
 
-@media (min-width: 768px) {
-  .image-hero {
-    padding-bottom: 30%;
+@media (max-width: 768px) {
+  .image-hero.background-position-rc {
+    background-position: center;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Comments
@@ -4307,6 +4338,10 @@ object {
 
 .padding-bottom-50 {
   padding-bottom: 50px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
 }
 
 .padding-bottom-100 {

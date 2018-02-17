@@ -4348,6 +4348,10 @@ object {
   height: 100%;
 }
 
+.display-block {
+  display: block;
+}
+
 .text-right {
   text-align: right;
 }
